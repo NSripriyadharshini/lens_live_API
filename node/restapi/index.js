@@ -5,7 +5,7 @@ dotenv.config()
 let port = process.env.PORT || 7900;
 let mongo = require('mongodb');
 let MongoClient = mongo.MongoClient;
-let mongoUrl = process.env.MongoURL;
+let mongoUrl = process.env.LiveMongo;
 let cors=require('cors');
 let bodyParser = require('body-parser')
 let db;
@@ -122,32 +122,29 @@ app.get('/orders',(req,res)=>{
 
 //placeorder
 app.post('/placeOrder',(req,res) => {
-    
-        db.collection('orders').insert(req.body,(err,result) => {
+        db.collection('orders').insertOne(req.body,(err,result) => {
             if(err) throw err;
-            res.send(result)
-     
+            res.send('order placed')
     }) 
 })
     
-
-//updateOrder
-app.put('/updateOrder/: id',(req,res) => {
-    let oid = Number(req.params.id);
+//Update order
+app.put("/updateOrder/:order_id",(req,res)=>{
+    let order_Id=Number(req.params.order_id);  
     db.collection('orders').updateOne(
-        {id:oid},
-        {
-            $set:{
-                "status":req.body.status,
-                "bank_name":req.body.bank_name,
-                "date":req.body.date
-            }
-        },(err,result) => {
-            if(err) throw err;
-            res.send('Order Updated')
+      {order_id:order_Id},
+      {
+        $set:{
+          "status":req.body.status,
+          "Bank_Details": req.body.bank_name,
+          "date":req.body.date
         }
-    )
-})
+      },(err,result)=>{
+        if(err) console.log(order_id);
+        res.send("Order updated");
+      })
+  
+  })
 
 //deleteOrder
 app.delete('/deleteOrder/:id',(req,res) => {
@@ -161,7 +158,7 @@ app.delete('/deleteOrder/:id',(req,res) => {
 //connection with db
 MongoClient.connect(mongoUrl,(err,client) => {
     if(err) console.log('Error while connecting');
-    db = client.db('lens');
+    db = client.db('lenskart');
     app.listen(port,()=>{
         console.log(`Server is running on port ${port}`)
     })
