@@ -122,19 +122,17 @@ app.get('/orders',(req,res)=>{
 
 //placeorder
 app.post('/placeOrder',(req,res) => {
-    if(Array.isArray(req.body.id)){
-        db.collection('orders').find({id:{$in:req.body.id}}).toArray((err,result) => {
+    
+        db.collection('orders').insert(req.body,(err,result) => {
             if(err) throw err;
             res.send(result)
-        })
-    }else{
-        res.send('Invalid Input')
-    }  
+     
+    }) 
 })
     
 
 //updateOrder
-app.put('/updateOrder/:id',(req,res) => {
+app.put('/updateOrder/: id',(req,res) => {
     let oid = Number(req.params.id);
     db.collection('orders').updateOne(
         {id:oid},
@@ -150,6 +148,16 @@ app.put('/updateOrder/:id',(req,res) => {
         }
     )
 })
+
+//deleteOrder
+app.delete('/deleteOrder/:id',(req,res) => {
+    let _id = mongo.ObjectId(req.params.id);
+    db.collection('orders').remove({_id},(err,result) => {
+        if(err) throw err;
+        res.send('Order Deleted')
+    })
+})
+
 //connection with db
 MongoClient.connect(mongoUrl,(err,client) => {
     if(err) console.log('Error while connecting');
