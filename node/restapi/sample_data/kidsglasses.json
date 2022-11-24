@@ -1,0 +1,127 @@
+db.kidsglasses.insert(
+    [
+        {
+            "id": 81,
+            "rating":5,
+            "product_name":"Hooper",
+            "category_id":7,
+            "image":"https://i.ibb.co/rGYyHJ5/1.jpg",
+            "frametype_id":1,
+            "frameshape_id":3,
+            "framecolor_id":6,
+            "suited for": "5-8 yrs",
+            "price":999,
+            "offer":"BUY1 GET1 FREE"
+        },
+        {
+            "id": 82,
+            "product_name":"Hooper",
+            "category_id":7,
+            "image":"https://i.ibb.co/VYP3yFp/2.jpg",
+            "frametype_id":1,
+            "frameshape_id":3,
+            "framecolor_id":6,
+            "suited for": "8-12 yrs",
+            "price":999,
+            "offer":"BUY1 GET1 FREE"
+        },
+        {
+            "id": 83,
+            "product_name":"Hooper",
+            "category_id":7,
+            "image":"https://i.ibb.co/zPSGYks/3.jpg",
+            "frametype_id":1,
+            "frameshape_id":1,
+            "framecolor_id":3,
+            "suited for": "5-8 yrs",
+            "price":999,
+            "offer":"BUY1 GET1 FREE"
+        },
+        {
+            "id": 84,
+            "product_name":"Hooper",
+            "category_id":7,
+            "image":"https://i.ibb.co/CKSv9Zt/4.jpg",
+            "frametype_id":1,
+            "frameshape_id":1,
+            "framecolor_id":2,
+            "suited for": "2-5 yrs",
+            "price":999,
+            "offer":"BUY1 GET1 FREE"
+        },
+        {
+            "id": 85,
+            "product_name":"Hooper",
+            "category_id":7,
+            "image":"https://i.ibb.co/qr5DSFv/5.jpg",
+            "frametype_id":1,
+            "frameshape_id":1,
+            "framecolor_id":6,
+            "suited for": "2-5 yrs",
+            "price":999,
+            "offer":"BUY1 GET1 FREE"
+        },
+        {
+            "id": 86,
+            "product_name":"Hooper",
+            "category_id":7,
+            "image":"https://i.ibb.co/1qVFJQY/6.jpg",
+            "frametype_id":1,
+            "frameshape_id":3,
+            "framecolor_id":11,
+            "suited for": "8-12 yrs",
+            "price":999,
+            "offer":"BUY1 GET1 FREE"
+        },
+        {
+            "id": 87,
+            "rating":5,
+            "product_name":"Hooper",
+            "category_id":7,
+            "image":"https://i.ibb.co/CQtPMDL/7.jpg",
+            "frametype_id":1,
+            "frameshape_id":3,
+            "framecolor_id":1,
+            "suited for": "8-12 yrs",
+            "price":999,
+            "offer":"BUY1 GET1 FREE"
+        },
+        {
+            "id": 88,
+            "product_name":"Hooper",
+            "category_id":7,
+            "image":"https://i.ibb.co/YN23fxn/8.jpg",
+            "frametype_id":1,
+            "frameshape_id":1,
+            "framecolor_id":6,
+            "suited for": "5-8 yrs",
+            "price":999,
+            "offer":"BUY1 GET1 FREE"
+        },
+        {
+            "id": 89,
+            "rating":4.8,
+            "product_name":"Hooper",
+            "category_id":7,
+            "image":"https://i.ibb.co/3s4fS2t/9.jpg",
+            "frametype_id":1,
+            "frameshape_id":1,
+            "framecolor_id":1,
+            "suited for": "5-8 yrs",
+            "price":999,
+            "offer":"BUY1 GET1 FREE"
+        },
+        {
+            "id": 90,
+            "product_name":"Hooper",
+            "category_id":7,
+            "image":"https://i.ibb.co/tP88HLT/10.jpg",
+            "frametype_id":1,
+            "frameshape_id":1,
+            "framecolor_id":7,
+            "suited for": "8-12 yrs",
+            "price":999,
+            "offer":"BUY1 GET1 FREE"
+        }
+    ]
+)

@@ -1,0 +1,95 @@
+[
+    {
+        "id": 11,
+        "product_name":"OJOS",
+        "category_id":2,
+        "image":"https://i.ibb.co/M7cszmk/1.jpg",
+        "size":"Extra Wide.OJOS",
+        "price":1699,
+        "offer":"60% OFF. Voucher: TRYUS"
+    },
+    {
+        "id": 12,
+        "rating":4.3,
+        "product_name":"Vincent Chase",
+        "category_id":2,
+        "image":"https://i.ibb.co/RprbMw4/2.jpg",
+        "size":"Narrow.Livewire",
+        "price":1599,
+        "offer":"BUY1 GET1 FREE"
+    },
+    {
+        "id": 13,
+        "rating":4.3,
+        "product_name":"Vincent Chase Polarized",
+        "category_id":2,
+        "image":"https://i.ibb.co/YcSqRzD/3.jpg",
+        "size":"Medium",
+        "price":1599,
+        "offer":"BUY1 GET1 FREE"
+    },
+    {
+        "id": 14,
+        "rating":4.3,
+        "product_name":"OJOS",
+        "category_id":2,
+        "image":"https://i.ibb.co/pf6Vb8g/4.jpg",
+        "size":"Extrawide.OJOS",
+        "price":1699,
+        "offer":"60% OFF. Voucher: TRYUS"
+    },
+    {
+        "id": 15,
+        "product_name":"Vincent Chase Polarized",
+        "category_id":2,
+        "image":"https://i.ibb.co/DKy7s3t/5.jpg",
+        "size":"Medium.Met Effect",
+        "price":1599,
+        "offer":"BUY1 GET1 FREE"
+    },
+    {
+        "id": 16,
+        "product_name":"Vincent Chase Polarized",
+        "category_id":2,
+        "image":"https://i.ibb.co/rdzd22H/6.jpg",
+        "size":"Medium",
+        "price":1599,
+        "offer":"BUY1 GET1 FREE"
+    },
+    {
+        "id": 17,
+        "product_name":"Vincent Chase Polarized",
+        "category_id":2,
+        "image":"https://i.ibb.co/84ZWwRR/7.jpg",
+        "size":"Medium.Met Effect",
+        "price":1599,
+        "offer":"BUY1 GET1 FREE"
+    },
+    {
+        "id": 18,
+        "product_name":"Vincent Chase Polarized",
+        "category_id":2,
+        "image":"https://i.ibb.co/5YYWwqX/8.jpg",
+        "size":"Wide",
+        "price":1599,
+        "offer":"BUY1 GET1 FREE"
+    },
+    {
+        "id": 19,
+        "product_name":"Vincent Chase Polarized",
+        "category_id":2,
+        "image":"https://i.ibb.co/BrK5Rbx/9.jpg",
+        "size":"Narrow.Met Effect",
+        "price":1599,
+        "offer":"BUY1 GET1 FREE"
+    },
+    {
+        "id": 20,
+        "product_name":"Vincent Chase Polarized",
+        "category_id":2,
+        "image":"https://i.ibb.co/McGvXNz/10.jpg",
+        "size":"Size: Extra Wide•NON-Power",
+        "price":1299,
+        "offer":"BUY1 GET1 FREE"
+    }
+]
