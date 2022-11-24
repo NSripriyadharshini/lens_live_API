@@ -63,7 +63,7 @@ body
 * http://localhost:9900/orders?email=malu@gmail.com
 
 >Update Payement Details (PUT)
-*
+* http://localhost:9800/updateOrder/65
 body
 {
     "status":"TXN_SUCCESS",
@@ -72,4 +72,4 @@ body
 }
 
 >Delete Order (Delete)
-*
+* http://localhost:9800/deleteOrder/637ed1d5ab549088e1eeb34d
